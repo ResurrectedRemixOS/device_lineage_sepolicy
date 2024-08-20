@@ -16,3 +16,6 @@ set_prop(system_server, xtra_control_prop)
 
 # Stage Play Integrity props for bionic in DroidGuard
 set_prop(system_server, pif_prop)
+
+# Freeform
+add_service(system_server, lmo_freeform_service);
