@@ -13,3 +13,8 @@ hal_client_domain(system_app, hal_lineage_touch)
 
 # Allow SetupWizard to set recovery update prop
 set_prop(system_app, recovery_update_prop)
+
+# Bootanim
+allow system_app bootanim_data_file:dir create_dir_perms;
+allow system_app bootanim_data_file:file create_file_perms;
+set_prop(system_app, bootanim_system_prop)

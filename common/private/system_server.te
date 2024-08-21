@@ -22,3 +22,7 @@ set_prop(system_server, pif_prop)
 
 # Freeform
 add_service(system_server, lmo_freeform_service);
+
+# Boot animation
+allow system_server bootanim_data_file:dir create_dir_perms;
+allow system_server bootanim_data_file:file create_file_perms;
