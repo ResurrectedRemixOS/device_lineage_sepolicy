@@ -21,3 +21,7 @@ set_prop(system_app, bootanim_system_prop)
 
 # RR bug reports note why this boot happened (sys.boot.reason)
 get_prop(system_app, system_boot_reason_prop)
+
+# Allow GameSpace to set process group
+allow system_app cgroup:dir search;
+allow system_app cgroup:file rw_file_perms;
