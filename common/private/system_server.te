@@ -13,3 +13,6 @@ get_prop(system_server, camera2_extensions_prop)
 
 # Let system server toggle xtra-daemon
 set_prop(system_server, xtra_control_prop)
+
+# Stage Play Integrity props for bionic in DroidGuard
+set_prop(system_server, pif_prop)
